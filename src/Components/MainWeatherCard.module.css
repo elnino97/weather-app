@@ -1,0 +1,17 @@
+.card__main {
+  margin-top: 31px;
+  /* width: 374px; */
+  height: 654px;
+  background: #5fa6f1;
+  border-radius: 19px;
+  color: #f5f9fe;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .card__main {
+    margin-top: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.suggestion {
+  color: #a0a0a0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.suggestion:hover {
+  cursor: pointer;
+}
