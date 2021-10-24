@@ -25,7 +25,7 @@ function App() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `https://api.meteo.lt/v1/places/${input}/forecasts/long-term`
+        `https://floating-beyond-21381.herokuapp.com/https://api.meteo.lt/v1/places/${input}/forecasts/long-term` // Have to use cors-anywhere otherwise the API refuses to send data over
       );
       const data = await response.json();
       const formattedData = formatWeatherData(data.forecastTimestamps);
