@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Weather App
+
+An application used to get weather data from Lithuania built with React and create-react-app.
+
+## Project Screenshots
+
+<br />
+
+![Desktop](https://i.imgur.com/xOVXmcp.png)
+![Mobile1](https://i.imgur.com/RBSL0UN.png)
+![Mobile2](https://i.imgur.com/elPNSQV.png)
+
+## Getting Started with Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +18,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### Start development server
+
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,57 +28,28 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### Launch test runner
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm test`
 
-### `npm run build`
+### Create a production build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm run build`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Eject
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
+`npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Reflection
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This was a 4-5 day project built for a company to test my knowledge and skillset. The goal of the project for me to build a fast application that uses React since it's a required tech at the company. For this project I chose to use the create-react-app boilerplate to minimize initial setup and invest more time in diving into actual code.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For this project I received a link to Adobe XD where there were design sheets and assets stored.
 
-## Learn More
+The main challenges I ran into was IE11 (Internet Explorer 11) support and meteo having problems with api calls. The IE problem required me to spend additional time researching and then rewriting existing code that was already working perfectly on modern browsers. Meteo API on the other hand required me to setup a proxy called "cors-anywhere" so I could have the call go through a proxy that I hosted on Heroku. Wihout "cors-anywhere" it would have been impossible to receive data as there's problems on meteo's end.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Where I could have done better is probably could have written cleaner code and structured the project better. Some things on the style could be improved for sure like the initial state when the app first loads. I'm also not happy how I imported the svg's but at least it works.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+There's also the fact that the design asked you to do 6 cards for each day but it was not possible due to the fact that the API didn't provide you with every piece of data that you'd need to do that.
