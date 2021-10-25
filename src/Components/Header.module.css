@@ -15,6 +15,7 @@
   .weather__header {
     padding: 0 20px;
     background: #5fa6f1;
+    height: 13vh;
   }
   .weather__header h1 {
     padding-left: 0;
