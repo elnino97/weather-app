@@ -4,7 +4,8 @@ const formatWeatherData = (data) => {
   const filteredData = data.filter((i) => timeRegex.test(i.forecastTimeUtc));
 
   const dataFixedWeatherCodes = filteredData.map((i) => {
-    return /22:00|02:00/g.test(i.forecastTimeUtc)
+    return /22:00|02:00/g.test(i.forecastTimeUtc) &&
+      /clear|isolated-clouds|scattered-clouds/.test(i.conditionCode)
       ? { ...i, conditionCode: i.conditionCode + "-night" }
       : i;
   });
