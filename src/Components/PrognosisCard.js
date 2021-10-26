@@ -36,7 +36,7 @@ const weatherCodes = {
   "moderate-snow": <ModerateSnow />,
   overcast: <Overcast />,
   "scattered-clouds": <ScatteredClouds />,
-  "scattered-cloud-night": <ScatteredCloudsNight />,
+  "scattered-clouds-night": <ScatteredCloudsNight />,
   sleet: <Sleet />,
 };
 
