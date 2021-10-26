@@ -5,7 +5,7 @@ const formatWeatherData = (data) => {
 
   const dataFixedWeatherCodes = filteredData.map((i) => {
     return /22:00|02:00/g.test(i.forecastTimeUtc) &&
-      /clear|isolated-clouds|scattered-clouds/.test(i.conditionCode)
+      /clear|isolated-clouds|scattered-clouds/gi.test(i.conditionCode)
       ? { ...i, conditionCode: i.conditionCode + "-night" }
       : i;
   });
